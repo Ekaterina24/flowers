@@ -1,11 +1,21 @@
 @font-face {
-  font-family: "Comfortaa";
+  font-family: "ComfortaaBold";
   src: url("../fonts/ofont.ru_Comfortaa.ttf");
 }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "OpenSansRegular";
   src: url("../fonts/ofont.ru_Open Sans.ttf");
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/open-sans-bold_[allfont.ru].ttf");
+}
+
+@font-face {
+  font-family: "PtSerifBold";
+  src: url("../fonts/pt-serif-bold_[allfont.ru].ttf");
 }
 
 body {
@@ -31,9 +41,8 @@ a {
       }
       span {
         font-size: 15px;
-        font-family: "Comfortaa", sans-serif;
+        font-family: "ComfortaaBold", sans-serif;
         color: rgb(255, 255, 255);
-        font-weight: bold;
         margin-left: 9px;
         vertical-align: middle;
       }
@@ -45,7 +54,7 @@ a {
       justify-content: space-between;
       .item-menu {
           font-size: 15px;
-          font-family: "Open Sans", sans-serif;
+          font-family: "OpenSansRegular", sans-serif;
           color: rgb(255, 255, 255);
       }
     }
@@ -53,9 +62,8 @@ a {
       margin-left: 168px;
       .white-btn {
         font-size: 14px;
-        font-family: "Open Sans", sans-serif;
+        font-family: "OpenSansBold", sans-serif;
         color: rgb(255, 255, 255);
-        font-weight: bold;
 
         border: 2px solid rgb(255, 255, 255);
         border-radius: 20px;
@@ -87,3 +95,89 @@ a {
     }
   }
 }
+
+.main {
+  background-color: rgb(244, 248, 248);
+  padding: 125px 0 130px;
+  background-image: url("../images/bg-grey.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .main-text {
+      h1 {
+        margin: 0;
+        font-size: 55px;
+        font-family: "PtSerifBold", sans-serif;
+        color: rgb(39, 60, 17);
+        max-width: 590px;
+        line-height: 1.182;
+      }
+      .main-inf {
+        font-size: 20px;
+        font-family: "OpenSansRegular", sans-serif;
+        color: rgb(16, 25, 7);
+        line-height: 1.4;
+        max-width: 390px;
+        margin-top: 50px;
+        margin-bottom: 55px;
+      }
+      .main-btn {
+        button {
+          background-color: rgb(148, 182, 96);
+          width: 255px;
+          box-sizing: border-box;
+          outline: none;
+          border: 0;
+          border-radius: 27.5px;
+
+          font-size: 14px;
+          font-family: "OpenSansBold", sans-serif;
+          color: rgb(251, 251, 251);
+          font-weight: bold;
+          padding: 20px;
+          text-align: center;
+        }
+      }
+      .main-icons {
+        margin-top: 90px;
+        display: flex;
+        width: 605px;
+        justify-content: space-between;
+        .main-icon {
+          text-align: center;
+          .green-circle {
+            margin: 0 auto;
+            border-radius: 50%;
+            background-color: rgb(148, 182, 96);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .icon-text {
+            font-size: 14px;
+            font-family: "OpenSansRegular", sans-serif;
+            color: rgb(16, 25, 7);
+            line-height: 1.357;
+            margin-top: 22px;
+            width: 161px;
+            &.big {
+              width: 185px;
+            }
+          }
+        }
+      }
+    }
+    .main-img {
+      margin-top: -65px;
+    }
+  }
+}
+
+
