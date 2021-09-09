@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/ofont.ru_Comfortaa.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/ofont.ru_Open Sans.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  background: #94b660;
+  padding: 19px 0;
+  .header-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    .logo {
+      img {
+        vertical-align: middle;
+      }
+      span {
+        font-size: 15px;
+        font-family: "Comfortaa", sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        margin-left: 9px;
+        vertical-align: middle;
+      }
+    }
+    .items-menu {
+      margin-left: 175px;
+      width: 582px;
+      display: flex;
+      justify-content: space-between;
+      .item-menu {
+          font-size: 15px;
+          font-family: "Open Sans", sans-serif;
+          color: rgb(255, 255, 255);
+      }
+    }
+    .header-btn {
+      margin-left: 168px;
+      .white-btn {
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        width: 160px;
+        outline: none;
+        box-sizing: border-box;
+        padding: 14px;
+        background-color: transparent;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .header-block {
+      display: none;
+      #burger {
+        display: none;
+        color: white;
+        font-size: 32px;
+        line-height: 30px;
+      }
+      .phone {
+        display: none;
+        fill: white;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
